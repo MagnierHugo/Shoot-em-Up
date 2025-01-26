@@ -31,6 +31,12 @@ xmake project -k vsxmake -m "debug,release"
 ### Some other little problems
 
 - Score not being properly passed from the Lvls to the Win and GameOver scenes (will always be 0)
+- The UI coordinates doesn't scale with the window, so if the window is resized the interraction with the UI elements will be messed-up.
+
+### Note
+
+To make the repo public I had to delete the main music due to copyright reasons, so this version of the game doesn't have music.
+Also the volume slider in the settings now crashes the game if touched.
 
 ## Authors
 
