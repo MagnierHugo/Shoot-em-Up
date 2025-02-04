@@ -42,10 +42,8 @@ int main(void)
 
     sl::AudioManager audioManager;
 
-    // Lines commented because main music need to be removed in order to make the repo public
-    // for copyright reasons
-    // sl::Ref<sl::AudioResource> audioResource = sl::AudioManager::CreateAudioResource("assets/music/music.mp3", sl::AudioType::Music);
-    // sl::AudioManager::CreateAudioSource("MainMusic")->SetAudioResource(sl::AudioManager::GetAudioResource("assets/music/music.mp3"))->Play(true);
+    sl::Ref<sl::AudioResource> audioResource = sl::AudioManager::CreateAudioResource("assets/music/music.mp3", sl::AudioType::Music);
+    sl::AudioManager::CreateAudioSource("MainMusic")->SetAudioResource(sl::AudioManager::GetAudioResource("assets/music/music.mp3"))->Play(true);
 
     sl::InputManager input(&window);
 

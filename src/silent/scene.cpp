@@ -935,8 +935,6 @@ namespace sl {
         Ref<Renderable> scoreCounterRenderablePtr = scoreCounter->AddComponent<Renderable>();
         scoreCounterRenderablePtr->SetModeText(std::to_string(GameManager::GetScore()), ResourceManager::Get("assets/fonts/Roboto-Black.ttf", ResourceType::Font), 25, sf::Color::White);
         scoreCounterRenderablePtr->SetOrigin(true);
-        scoreCounter->AddComponent<Mover>();
-        scoreCounter->AddComponent<RescalerUniform>();
         scoreCounter->transform->Position = Vector2(800, 435);
         scoreCounter->transform->Scale = Vector2(3, 3);
     }
